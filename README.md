@@ -10,5 +10,7 @@ Es ist also keine Datenbank nötig.
 
 Der Code ist (noch) nicht kommentiert.. sorry :-/
 
-## Anmerkung
+## Anmerkungen
 Beim Spielen gegen einen Geist muss die Eingabetaste betätigt werden um den Score vom Geist abzurufen. Dies wird sich in naher Zukunft vstl. ändern.
+
+Vermutlich gibt es irgendwann die Möglichkeit gegen weitere Spieler zu spielen.
