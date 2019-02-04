@@ -12,7 +12,9 @@ player = new Array();
 player[1] = new Array();
 player[2] = new Array();
 player[0] = '';
+
 $( document ).on( "keydown", function( event ) {
+	// Keydown lauscht auf die Eingabetaste
 	if(event.which == 13){
 		if(popUp == 0){
 			if(ghost == 1 && active == 2){
@@ -52,10 +54,7 @@ $( document ).on( "keydown", function( event ) {
 						msg+="<input type='button' value='neues Spiel' id='reload' autofocus>";
 					}
 					$('#popUp').html(msg).css("display","block");
-					// var dude = confirm("Spieler "+$('.player_'+active+'_name').html()+" hat gewonnen! Wuhu!");
-					// if(dude == true){
-					// 	location.reload();
-					// }
+					
 				}
 			}	
 			else{
@@ -88,9 +87,6 @@ $( document ).on( "keydown", function( event ) {
 		}else{
 			update();
 		}
-	}
-	if (event.which == 27) {
-		
 	}
   // console.log(player);
 });
@@ -171,15 +167,7 @@ function update(){
 				winner = res[0];
 				$('#popUp').html(msg).css("display","block");
 				// active player is winner!!
-				// var msg = "Spieler "+$('.player_'+res[0]+'_name').html()+" hat gewonnen! Wuhu!";
-				// if((res[0] == 2 && ghost != 1) || res[0] == 1){
-				// 	msg+="<br>Möchtest du das Ergebis als Geist speichern?";
-				// }
-				// $('#popUp').html(msg);
-				// var dude = confirm("");
-				// if(dude == true){
-				// 	location.reload();
-				// }
+
 			}else{
 				$('#popUp').css("display","none");
 			}

@@ -1,6 +1,9 @@
 <?php 
-	$reason = $_POST['r'];
-	ini_set("auto_detect_line_endings", true);
+	// reason Variable 
+	// 1 Datensätze werden ausgelesen und an als jsonArray übergeben
+	// 2 neuen Datensatz wird gespeichert
+	$reason = $_POST['r']; 
+	ini_set("auto_detect_line_endings", true); // Workarround Lineendings Bug
 	if ($reason == 1) {
 		$links = file('scores.txt');
 		// krsort($links);
